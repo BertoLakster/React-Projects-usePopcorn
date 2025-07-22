@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-// import "./index.css";
-// import App from "./App";
+import "./index.css";
+import App from "./App";
 import StarRating from "./StarRating";
 
 function Test({ maxRating, size, color, className, messages, defaultRating }) {
@@ -25,7 +25,7 @@ function Test({ maxRating, size, color, className, messages, defaultRating }) {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
 
     {/* The user of this component can add the maximum amount of stars they want */}
     {/* <StarRating maxRating={5} /> */}
@@ -37,7 +37,7 @@ root.render(
       messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
       defaultRating={1}
     /> */}
-    <Test maxRating={15} />
+    {/* <Test maxRating={15} />
     <Test
       maxRating={5}
       size={48}
@@ -47,6 +47,6 @@ root.render(
       defaultRating={0}
     />
 
-    <Test size={24} />
+    <Test size={24} /> */}
   </React.StrictMode>
 );
